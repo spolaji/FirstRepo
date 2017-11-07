@@ -1,0 +1,32 @@
+package com.chapter.initializationandcleanup;
+
+import static com.chapter.everythingisanobject.Print.print;
+import static com.chapter.everythingisanobject.Print.println;
+
+public class VarargType {
+
+	static void f(Character... args) {
+		print(args.getClass());
+		println(" length " + args.length);
+	}
+	
+	static void g(Integer... args) {
+		print(args.getClass());
+		println(" length " + args.length);
+	}	
+	
+	static void h(int... args) {
+		print(args.getClass());
+		println(" length " + args.length);		
+	}
+	
+	public static void main(String[] args) {
+		f('a');
+		f();
+		g(1);
+		g();
+		println("int[]: " + new int[0].getClass());
+		h();
+	}
+
+}
