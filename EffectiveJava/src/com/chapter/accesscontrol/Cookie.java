@@ -8,7 +8,7 @@ public class Cookie {
 	}
 	
     void bite() {
-		println("bite");
+		println("bite ");
 	}
 	
 }
