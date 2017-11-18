@@ -2,7 +2,7 @@ package com.ets.tests.test4;
 
 
 class A{
-	final int fi = 10;
+	 int fi = 10;
 }
 
 public class B2 extends A{

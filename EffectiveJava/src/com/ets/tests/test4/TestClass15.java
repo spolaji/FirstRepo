@@ -6,7 +6,8 @@ interface Runner {
 
 public class TestClass15 { 
 	public static void main(String[] args) { 
-		run(() -> voidMethod()); //will invoke run(Runner ) method.         
+		Runner run = () -> voidMethod();
+		run(run); //will invoke run(Runner ) method.         
 		run(() -> {intMethod();});//will also invoke run(Runner ) method.     
 	}  
 	
